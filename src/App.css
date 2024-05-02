@@ -1,3 +1,4 @@
+/*
 .App {
   text-align: center;
 }
@@ -35,4 +36,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+*/
+
+.square{
+  background: #fff;
+  border: 2px solid #999;
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 80px;
+  height: 80px;
+  margin-right: -2px;
+  text-align: center;
+  width: 80px;
+  transition: background-cokor 0.3s ease;
+}
+
+.square:hover{  /*정사각형에 마우스 커버를 올릴 때 변경할 배경색 정의*/
+  background: #d9d9d9;
+}
+
+.board-row::after{  /*각 정사각형 열(3개로 구성)에 대한 디자인 정보 명기*/
+  clear: both;
+  content: "";
+  display: table;
 }
